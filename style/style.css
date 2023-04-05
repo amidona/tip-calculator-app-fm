@@ -1,0 +1,144 @@
+/********** OVERARCHING STYLES ***********/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input,
+button {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+}
+
+/****** HEADER ******/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/****** MAIN BODY ******/
+.main {
+    background: white;
+    padding: 25px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    justify-content: center;
+}
+
+.main>* {
+    padding-bottom: 25px;
+}
+
+h1 {
+    font-size: 14px;
+    color: hsl(186, 14%, 43%);
+}
+
+/** BILL SECTION **/
+#bill-total {
+    background-image: url(../images/icon-dollar.svg);
+}
+
+/** TIP SECTION **/
+#tip-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#tip-buttons h1 {
+    width: 100%;
+}
+
+.tip {
+    width: 45%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.tip-button {
+    background: hsl(183, 100%, 15%);
+    color: white;
+}
+
+/** PEOPLE SECTION **/
+#people-total {
+    background-image: url(../images/icon-person.svg);
+}
+
+/** TOTALS SECTION **/
+#total-box {
+    background: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 15px;
+}
+
+#total-box>* {
+    width: 100%
+}
+
+#total-box h1 {
+    color: white;
+}
+
+#total-box p {
+    color: hsl(184, 14%, 56%);
+    font-size: 10px;
+}
+
+#total-box h2 {
+    color: hsl(172, 67%, 45%);
+    font-size: 24px;
+}
+
+#tip-per-person,
+#total-per-person {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: baseline;
+    margin-top: 20px;
+}
+
+#reset {
+    background: hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+
+/****** FOOTER ******/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
