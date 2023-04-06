@@ -23,43 +23,49 @@
             </figure>
         </header>
         <div class="main">
-            <div id="bill">
-                <h1>Bill</h1>
-                <input type="text" id="bill-total" placeholder="0">
-            </div>
-            <div id="tip-buttons">
-                <h1>Select Tip %</h1>
-                <button class="tip tip-button" value="5">5%</button>
-                <button class="tip tip-button" value="10">10%</button>
-                <button class="tip tip-button" value="15">15%</button>
-                <button class="tip tip-button" value="25">25%</button>
-                <button class="tip tip-button" value="50">50%</button>
-                <input type="text" class="tip" id="custom-tip" placeholder="Custom">
-            </div>
-            <div id="number-of-people">
-                <h1>Number of People</h1>
-                <input type="text" id="people-total" placeholder="0">
-            </div>
-            <div id="total-box">
-                <div id="tip-per-person">
-                    <div class="text">
-                        <h1>Tip Amount</h1>
-                        <p>/ person</p>
-                    </div>
-                    <div class="money">
-                        <h2 class="totals" id="tip-owed">$0.00</h2>
-                    </div>
+            <div id="inputs">
+                <div id="bill">
+                    <h1>Bill</h1>
+                    <input type="text" id="bill-total" placeholder="0">
                 </div>
-                <div id="total-per-person">
-                    <div class="text">
-                        <h1>Total</h1>
-                        <p>/ person</p>
-                    </div>
-                    <div class="money">
-                        <h2 class="totals" id="total-owed">$0.00</h2>
-                    </div>
+                <div id="tip-buttons">
+                    <h1>Select Tip %</h1>
+                    <button class="tip tip-button" value="5">5%</button>
+                    <button class="tip tip-button" value="10">10%</button>
+                    <button class="tip tip-button" value="15">15%</button>
+                    <button class="tip tip-button" value="25">25%</button>
+                    <button class="tip tip-button" value="50">50%</button>
+                    <input type="text" class="tip" id="custom-tip" placeholder="Custom">
                 </div>
-                <button id="reset">reset</button>
+                <div id="number-of-people">
+                    <h1>Number of People</h1>
+                    <input type="text" id="people-total" placeholder="0">
+                </div>
+            </div>
+            <div id="outputs">
+                <div id="total-box">
+                    <div id="output-totals">
+                        <div id="tip-per-person">
+                            <div class="text">
+                                <h1>Tip Amount</h1>
+                                <p>/ person</p>
+                            </div>
+                            <div class="money">
+                                <h2 class="totals" id="tip-owed">$0.00</h2>
+                            </div>
+                        </div>
+                        <div id="total-per-person">
+                            <div class="text">
+                                <h1>Total</h1>
+                                <p>/ person</p>
+                            </div>
+                            <div class="money">
+                                <h2 class="totals" id="total-owed">$0.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="reset">reset</button>
+                </div>
             </div>
         </div>
     </div>
