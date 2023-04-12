@@ -201,10 +201,6 @@ footer {
 
 /********************************** DESKTOP STYLES ***************************************/
 @media (min-width: 1200px) {
-    /* .content {
-        max-width: 1440px;
-    } */
-
     .main {
         width: 60%;
     }
