@@ -32,6 +32,10 @@ input[type=text] {
     color: hsl(183, 100%, 15%);
 }
 
+input:focus {
+    outline: solid hsl(172, 67%, 45%);
+}
+
 /****** HEADER ******/
 header {
     display: flex;
@@ -57,10 +61,21 @@ h1 {
     color: hsl(186, 14%, 43%);
 }
 
+.error-message {
+    color: orange;
+}
+
 /** BILL SECTION **/
-#bill-total {
+#bill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[name=bill-input] {
     background-image: url(../images/icon-dollar.svg);
     padding: 2px 15px;
+    width: 100%;
 }
 
 /** TIP SECTION **/
@@ -86,9 +101,16 @@ h1 {
 }
 
 /** PEOPLE SECTION **/
-#people-total {
+#number-of-people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[name=people-input] {
     background-image: url(../images/icon-person.svg);
     padding: 2px 15px;
+    width: 100%;
 }
 
 /** TOTALS SECTION **/
@@ -135,6 +157,7 @@ h1 {
     font-size: 20px;
     padding: 5px;
     margin-top: 25px;
+    pointer-events: none;
 }
 
 
