@@ -14,8 +14,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -34,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/amidona/tip-calculator-app-fm](https://github.com/amidona/tip-calculator-app-fm)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://amidona.github.io/tip-calculator-app-fm/](https://amidona.github.io/tip-calculator-app-fm/)
 
 ## My process
 
