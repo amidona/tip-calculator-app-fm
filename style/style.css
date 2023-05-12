@@ -17,30 +17,35 @@ body {
 
 input,
 button {
-    font-family: 'Space Mono', monospace;
-    font-size: 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
 }
 
 input[type=text] {
-    background-repeat: no-repeat;
-    background-position: left center;
     background-color: hsl(189, 41%, 97%);
-    text-align: right;
+    background-position: left center;
+    background-repeat: no-repeat;
     color: hsl(183, 100%, 15%);
+    text-align: right;
 }
 
-input:focus {
-    outline: solid hsl(172, 67%, 45%);
+input:hover {
+    border: 3px solid hsl(172, 67%, 45%);
+}
+
+input:focus,
+input:active {
+    border: 3px solid hsl(172, 67%, 45%);
 }
 
 /****** HEADER ******/
 header {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 50px;
     width: 100%;
 }
@@ -48,8 +53,8 @@ header {
 /****** MAIN BODY ******/
 .main {
     background: white;
-    padding: 25px;
     border-radius: 20px;
+    padding: 25px;
 }
 
 #inputs>* {
@@ -57,8 +62,8 @@ header {
 }
 
 h1 {
-    font-size: 14px;
     color: hsl(186, 14%, 43%);
+    font-size: 14px;
 }
 
 .error-message {
@@ -98,6 +103,10 @@ input[name=bill-input] {
 .tip-button {
     background: hsl(183, 100%, 15%);
     color: white;
+}
+
+input[name=custom-tip] {
+    width: 43%;
 }
 
 /** PEOPLE SECTION **/
@@ -143,21 +152,21 @@ input[name=people-input] {
 
 #tip-per-person,
 #total-per-person {
+    align-content: baseline;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-content: baseline;
     margin-top: 20px;
 }
 
 #reset {
     background: hsl(186, 14%, 43%);
     color: hsl(183, 100%, 15%);
-    text-transform: uppercase;
     font-size: 20px;
-    padding: 5px;
     margin-top: 25px;
+    padding: 5px;
     pointer-events: none;
+    text-transform: uppercase;
 }
 
 
@@ -194,9 +203,13 @@ footer {
         width: 30%;
     }
 
+    input[name=custom-tip] {
+        width: 28%;
+    }
+
     #total-box {
-        height: calc(100% - 50px);
         align-content: space-between;
+        height: calc(100% - 50px);
     }
 
     #total-box h2 {
@@ -219,7 +232,6 @@ footer {
         height: 40px;
         margin: 15px;
     }
-
 }
 
 /********************************** DESKTOP STYLES ***************************************/
@@ -227,5 +239,4 @@ footer {
     .main {
         width: 60%;
     }
-
 }
